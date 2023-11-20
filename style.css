@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg-image{
+    background: url(Bakery.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg-image::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0.7);
+    
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    z-index: 999;
+    width: 470px;
+    text-align: center;
+    padding: 60px 32px;
+    background: rgba(255,255,255,0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    
+}
+.content .registration{
+    display: none;
+}
+#check:checked ~ .registration{
+    display: block;
+}
+#check:checked ~ .login{
+    display: none;
+}
+#check{
+    display: none;
+}
+.content header{
+    color: white;
+    font-size: 33px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    font-family: sans-serif;
+}
+.field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background: rgba(255,255,255,0.94);
+    border-radius: 10px;
+}
+.field span{
+   color: #222;
+   width: 40px;
+   line-height: 45px;
+}
+
+.field input{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #222;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.space{
+    margin-top: 16px;
+}
+.icons{
+    text-align: center;
+}
+.icons img{
+    width: 40px;
+    margin: 10px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+}
+
+.pass{
+    text-align: left;
+    margin: 10px 0;
+}
+.pass a{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.pass:hover{
+    text-decoration: underline;
+    color: white;
+}
+input[type="submit"]{
+    background: #3498db;
+    border: 1px solid #2691d9;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+input[type="submit"]:hover{
+    background: #2691d9;
+
+}
+.login{
+    color: white;
+    margin: 20px 0;
+    font-family: sans-serif;
+}
+.signup{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 15px;
+}
+.signup label{
+    color: #3498db;
+    text-decoration: none;
+}
+.signup label:hover{
+    text-decoration: underline;
+}
+.gender-title{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+.gender-catergory{
+    margin: 15px 0;
+    color: white;
+}
+.gender-catergory label{
+    padding: 0 20px 0 5px;
+}
